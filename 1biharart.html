@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 2570px;
+            background-image: url(paintback2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .mid {
+            /* border: 3px solid red;  */
+            width: 600px;
+            margin: 15px 650px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20 px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .right img {
+            width: 120px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(paintback2.jpg);
+            display: inline-block;
+            border-radius: 50px;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .painting {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 220px;
+            left: 55px;
+        }
+
+        .madhubani img {
+            position: absolute;
+            top: 410px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 280px;
+            border-radius: 10px;
+
+        }
+
+        .aboutmadhu {
+            /* border: 4px solid red; */
+            width: 900px;
+            position: absolute;
+            top: 416px;
+            right: 120px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutmadhu h3 {
+            text-align: center;
+        }
+
+        .textiles {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 750px;
+            left: 55px;
+        }
+
+        .tikuli img {
+            position: absolute;
+            top: 910px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 340px;
+            border-radius: 10px;
+        }
+
+        .abouttikuli {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 910px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .abouttikuli h3 {
+            text-align: center;
+        }
+
+        .terracotta img {
+            position: absolute;
+            top: 1230px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutterracotta {
+            border: 4px sol/id red;
+            width: 920px;
+            position: absolute;
+            top: 1230px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutterracotta h3 {
+            text-align: center;
+        }
+
+        .stone img {
+            position: absolute;
+            top: 1560px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutstone {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1540px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutstone h3 {
+            text-align: center;
+        }
+
+        .wood img {
+            position: absolute;
+            top: 1890px;
+            left: 90px;
+            /* border: 4px solid red; */
+            border-radius: 10px;
+            width: 355px;
+        }
+
+        .aboutwood {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1890px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutwood h3 {
+            text-align: center;
+        }
+
+        .metal img {
+            position: absolute;
+            top: 2220px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutmetal {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2240px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutmetal h3 {
+            text-align: center;
+        }
+
+        .button {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 2500px;
+            left: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: gray;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 2500px;
+            right: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        ART AND CRAFT
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./1bihartourisum.html">HOME</a></li>
+                <li><a href="" class="active">ART</a></li>
+                <li><a href="./1biharfestival.html">FESTIVAL</a></li>
+                <li><a href="./1biharfood.html">FOOD</a></li>
+                <li><a href="./1bihartrip1.html">TRIP</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <img src="apnabihar.jpg" alt="">
+        </div>
+    </header>
+    <div class="painting">
+        <h1>*PAINTING </h1>
+        <h3>These are the most popular experiences in Painting </h3>
+    </div>
+    <div class="madhubani">
+        <a href="./MADHUBANIPAINT.jpeg"><img src="MADHUBANIPAINT.jpeg" alt="" title="Madhubani-Painting"></a>
+    </div>
+    <div class="aboutmadhu">
+        <h3>Madhubani Painting</h3>
+        <h4> Madhubani painting has become synonymous with art and craft of Bihar in the whole world. </h4>
+        The process of painting and the use of natural dyes and pigments provide an eye-catching finish to these
+        paintings. Traditionally, the painting was done on freshly plastered mud walls and floors of huts; but over the
+        years it has moved to varied mediums including cloths, handmade papers, and canvas. Madhubani Painting is done
+        with fingers, twigs, brushes, nib-pens, and matchsticks, using natural dyes and pigments, and is characterized
+        by eye-catching geometrical patterns. This is a unique craft, handcrafted by artisans. Madhubani Painting
+        provides livelihood support to about 20000-25000 artisan’s family on regular basis in Madhubani district and
+        other places of Bihar.
+    </div>
+    <div class="textiles">
+        <h1>*TEXTILES AND HANDICRAFT </h1>
+        <h3>These are the most popular experiences in Textiles And Handicraft </h3>
+    </div>
+    <div class="tikuli">
+        <a href="./Tikuli Painting1.jpeg"><img src="Tikuli Painting1.jpeg" alt="" title="Tikuli Painting"></a>
+    </div>
+    <div class="abouttikuli">
+        <h3>Tikuli Painting </h3>
+        <h4> Tikuli is a type of hand painting and its history spread over 800 years. The painting with its modern
+            evolution and varied manifestations, find its origin in Patna, Bihar.</h4>
+        Tikuli art has a deep historical significance associated with it. Tikuli is the term that is locally used for
+        bindis, which are essentially colorful dots that women wear as accessories between their eyebrows. The basic raw
+        materials used in Tikuli craft is the MDF board and the colors. This is a unique product handcrafted by
+        artisans. This crafts provide livelihood support to about 300-500 artisans families on regular basis in Digha,
+        Danapur and Gai Ghat mahallas of Patna town of Bihar.
+    </div>
+    <div class="terracotta">
+        <a href="./Terracotta.jpg"><img src="Terracotta.jpg" alt="" title="Terracotta">
+    </div></a>
+    <div class="aboutterracotta">
+        <h3>Terracotta </h3>
+        <h4> Terracotta is one of the oldest craft that human beings ever introduced on earth.</h4>
+        It was once considered to be a poor man’s craft but in due course of time, it has made its ascent due to its
+        aesthetic value and occupied a distinct identity among all classes of people. Artisans use potters’ wheels to
+        make different shapes by using their own hands. The raw materials used in this craft are Ram-Ras Mitti and Gerua
+        Mitti. After the completion, it is then burned on coal. This is a unique product handcrafted by artisans. This
+        craft provides livelihood support to families of about 300-500 artisans on a regular basis in Darbhanga and
+        Madhubani districts of Bihar.
+    </div>
+    <div class="stone">
+        <a href="./STONECRAFT.jpeg"><img src="STONECRAFT.jpeg" alt="" title="Stone-craft">
+    </div></a>
+    <div class="aboutstone">
+        <h3>Stone Crafts </h3>
+        <h4> Stone carving is a very ancient tradition in Bihar. The craft achieved its zenith during the Mauryan period
+            and its finest examples are the rock-cut caves of Barabar and Nagarjuni Hills in Jahanabad District.</h4>
+        Various stupas and monasteries stand as the great exhibits of the excellent artistic quality of the artisans of
+        Bihar. Amongst the most famous stone carvings of Bihar are the Ashoka pillars at Lauria Nandangarh and Koluha,
+        along with Mundeshwari Temple Complex of Gupta period. This art is practiced at Patharkatti in Gaya district. It
+        is one of the major centres of stone craft in Bihar. The basic raw material used in this craft is marble and
+        Granite. This is a unique product handcrafted by artisans. This craft provides livelihood support to about
+        500-700 artisans family on regular basis in Gaya district of Bihar. Other centres of the stone craft in Bihar
+        are in Nalanda, Kaimur and Patna.
+    </div>
+    <div class="wood">
+        <a href="./WOODCRAFT.jpeg"> <img src="WOODCRAFT.jpeg" alt="" title="Wood Craft">
+    </div></a>
+    <div class="aboutwood">
+        <h3>Wood Crafts </h3>
+        <h4>Wood craft of Gaya is quite different from existing wood crafts available in the market. </h4>
+        It has a huge religious importance for the Buddhist followers and pilgrims who come to visit the Holy place of
+        Bodh Gaya, the place of Buddha’s enlightenment. The purchase of idols of Buddha has got a big ritual
+        significance for Buddhist pilgrims. This is source of livelihood for artisans engaged in the craft. The raw
+        materials used for the wood craft include Gambhar wood which is being purchased from Gaya’s local market. This
+        is a unique product handcrafted by artisans. This craft provides livelihood support to families of about 200-400
+        artisans on regular basis in Gaya district of Bihar.
+    </div>
+    <div class="metal">
+        <a href="./metalcraft.jpeg"><img src="metalcraft.jpeg" alt="" title="Metal Craft"></a>
+    </div>
+    <div class="aboutmetal">
+        <h3>Metal Crafts </h3>
+        <h4>Metal craft is one of the most ancient crafts of the Bihar state. This includes manufacturing of various
+            utility and decorative products made of Gold, Silver, Brass, Zinc, and Ashtdhatu metals. </h4>
+        Gold and Silver metal are widely used for the manufacturing of jewellery items. The jewellery items of Silver
+        manufactured in Munger and Banka district of Bihar are much in demand in the various parts of the country. Brass
+        and Ashtdhatu metals are used for the manufacturing of the idols of various Hindu deities. Bettiah, West
+        Champaran and Vaishali are famous for the manufacturing of metal idols. The metal works of copper, brass, and
+        bell metal are famous products. The craftsmen of Bihar used three different techniques namely last wax method,
+        Reposee and Dhokra for the manufacturing of various metal items.
+    </div>
+    <!-- <a href="./1bihartourisum.html">
+        <button class="button">Prev Page</button></a>
+    <a href="./1biharfestival.html">
+        <button class="button1">Next Page</button></a> -->
+       
+    </body>
+
+</html>

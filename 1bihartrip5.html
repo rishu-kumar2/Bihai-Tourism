@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP5</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 3130px;
+            background-image: url(ruinsofnalanda1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(ruinsofnalanda1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .lado img {
+            position: absolute;
+            top: 380px;
+            right: 130px;
+            /* border: 4px solid red; */
+            width: 340px;
+            border-radius: 10px;
+        }
+
+        .aboutlado {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 380px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlado h3 {
+            text-align: center;
+        }
+
+        .malpua img {
+            position: absolute;
+            top: 730px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutmalpua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 730px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutmalpua h3 {
+            text-align: center;
+        }
+
+        .lai img {
+            position: absolute;
+            top: 1060px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .aboutlai {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1070px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlai h3 {
+            text-align: center;
+        }
+
+        .perukia img {
+            position: absolute;
+            top: 1390px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutperukia {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1390px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutperukia h3 {
+            text-align: center;
+        }
+
+        .thrkua img {
+            position: absolute;
+            top: 1740px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 300px;
+        }
+
+        .aboutthekua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1750px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutthekua h3 {
+            text-align: center;
+        }
+
+        .tilkut img {
+            position: absolute;
+            top: 2050px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .abouttilkut {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2050px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .abouttilkut h3 {
+            text-align: center;
+        }
+
+        .kasar img {
+            position: absolute;
+            top: 2350px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 370px;
+            border-radius: 10px;
+        }
+
+        .aboutkasar {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2300px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutkasar h3 {
+            text-align: center;
+        }
+
+        .laung img {
+            position: absolute;
+            top: 2700px;
+            left: 130px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .aboutlaung {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2700px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlaung h3 {
+            text-align: center;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 600px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+
+        }
+
+        .button2 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 640px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            color: gray;
+        }
+
+        .button3 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 680px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button3:hover {
+            color: gray;
+        }
+
+        .button4 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 720px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+
+        }
+
+        .button4:hover {
+            color: gray;
+        }
+
+        .button5 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 760px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .button5:hover {
+            color: gray;
+        }
+
+        .button6 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 840px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button6:hover {
+            color: gray;
+        }
+
+        .button7 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 480px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button7:hover {
+            color: gray;
+        }
+
+        .button8 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 800px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button8:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        TRIPS AND TRAVELS
+        <h6>These are the most popular experiences in Trips</h6>
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+
+    </header>
+    <div class="lado">
+        <a href="./ruinsofnalanda.jpeg"><img src="ruinsofnalanda.jpeg" alt="" title="Ruins Of Nalanda, Nalanda"></a>
+    </div>
+    <div class="aboutlado">
+        <h3>Ruins Of Nalanda</h3>
+        Nalanda is about 90 km southeast of Patna. Although its history goes back to the times of the Buddha, the
+        university at Nalanda was founded in the 5th century CE, and it flourished for the next 700 years. Its decline
+        began in the late Pala period, but the final blow was the invasion by Bakhtiyar Khilji around 1200 CE. The
+        subjects that were taught at Nalanda included Buddhist scriptures (of both the Mahayana and Hinayana schools),
+        philosophy, theology, metaphysics, logic, grammar, astronomy and medicine. Chinese travellers Hiuen-Tsang and
+        I-Tsing had written detailed accounts about the university.
+    </div>
+    <div class="malpua">
+        <a href="./jalmandir.jpeg"> <img src="jalmandir.jpeg" alt="" title="Jal Mandir, Nalanda"></a>
+    </div>
+    <div class="aboutmalpua">
+        <h3>Jal Mandir</h3>
+        The Jal Mandir (literally water temple) marks the spot where Lord Mahavira was cremated. It is said that there
+        was such a huge demand for ashes from his funeral pyre that Jal mandir as the name suggests is a temple in the
+        middle of a lake blooming with lotuses. The main deity of the beautiful temple is a very old “Charan Paduka” of
+        Lord Mahavira. It marks the spot where the mortal remains of Lord Mahavira was cremated. It is believed that
+        this temple was built by King Nandivardhan, elder brother of Lord Mahavira.
+    </div>
+    <div class="lai">
+        <a href="./brahmakund.jpeg"> <img src="brahmakund.jpeg" alt="" title="Brahmakund, Nalanda"> </a>
+    </div>
+    <div class="aboutlai">
+        <h3>Brahmakund</h3>
+        The hot springs in this site are believed to have sacred healing powers for chronic ailments. <br>
+        Hindu devotes from all over the country visit Rajgir with Brahma Kund as their focal point to take dip in the
+        sacred water of this hot spring. <br>
+        These 11 hot water springs thronged by the Hindus are believed to have healing power for several chronic
+        ailments.
+        There is separate enclosed spring which is exclusively meant for ladies. The vendors sell ritualistic articles
+        along the sides of the wide flight of stairs that leads to the Kund.
+    </div>
+    <div class="perukia">
+        <a href="./cyclopeanwall.jpeg"><img src="cyclopeanwall.jpeg" alt="" title="Cyclopean-wall, Nalanda"></a>
+    </div>
+    <div class="aboutperukia">
+        <h3>Cyclopean Wall </h3>
+        Built with massive undressed stones fitted together, this wall is popular for its similarities with ancient
+        Greek walls. <br>
+        The ancient city of Rajgir was the capital city of King Bimbisara and his son Ajatshatru who were contemporaries
+        of the Buddha. The traces of a fortified wall are found around the city. This wall was built with massive
+        undressed stones fitted together having width of about 14'. It is popularly called as the Cyclopean wall for its
+        similarities with ancient Greek walls. Bastions were built at intervals to strengthen the wall. According to
+        Pali texts there were 32 large gates and 64 smaller ones to enter the fortified city. A considerable part of
+        this ancient massive wall running up along the Ratnagiri hill is still there, starting from the base of the hill
+        towards the hillside.
+    </div>
+    <div class="thrkua">
+        <a href="./ghorakatora.jpeg"><img src="ghorakatora.jpeg" alt="" title="Ghora Katora, Nalanda"></a>
+    </div>
+    <div class="aboutthekua">
+        <h3>Ghora Katora</h3>
+        Ghora Katora Lake is a beautiful spot near Rajgir. It is said that the horses of the kings of Rajgir used to
+        drink water here. The shape of the lake resembles that of a horse and the lake is surrounded by mountains on
+        three of the sides. It is located near World Peace Pagoda. Surrounded by hills, the lake looks picturesque and
+        makes for an ideal trip. Horse carts or tongas and bicycles help tourists reach them. One can enjoy boating
+        here. It is a very relaxing place and all one can hear is the sound of wind and water.
+    </div>
+    <div class="tilkut">
+        <a href="./pipalacave.jpeg"><img src="pipalacave.jpeg" alt="" title="Pipala cave, Nalanda"></a>
+    </div>
+    <div class="abouttilkut">
+        <h3>Pipala Cave </h3>
+        A fairly large 22' high ancient stone structure (Base- 85')(81 'and Top - 81 'x72') is locally known as
+        Jarasandha ki Baithak. The legendary infamous King's meeting quarter. The spot is situated just above the Brahma
+        Kund on the way to Saptaparni caves. However, some scholars believe it is a part of the cyclopean fortification
+        wall that was built for some military purpose. <br>
+        The Buddhist texts mentions this place as Pippala cave as the abode of Mahakashyapa, the Buddha's chief
+        disciple. As per some academicians this place resembles Xuanzang's description where Devadatta (Gautama Buddha's
+        cousin) breathed his last.
+    </div>
+    <div class="kasar">
+        <a href="./sonbhandarcaves.jpeg"><img src="sonbhandarcaves.jpeg" alt="" title="Son Bhandar Caves, Nalanda"></a>
+    </div>
+    <div class="aboutkasar">
+        <h3>Son Bhandar Caves</h3>
+        The Son Bhandar Caves, also Sonebhandar, are two artificial caves belong to Jainism (to Ajivikas earlier) are in
+        Rajgir in the state of Bihar in India. <br>
+        The caves are generally dated to the 3rd or 4th century CE, based on the dedicatory inscription found in the
+        largest cave which uses Gupta script of the 4th century CE, although some authors have suggested the caves could
+        actually go back to the period of the Maurya empire from 319 to 180 BCE. The main cave is rectangular with a
+        pointed ceiling, and the entrance is trapezoidal, reminiscent of the structure of the Barabar Caves (the first
+        artificial caves of India, dated the 3rd century BCE).[3] The quality of the Mauryan polish and the finish are
+        nevertheless much inferior. <br>
+        An inscription in the rock at the entrance of the cave in Gupta characters of the 4th century of our era
+        mentions the construction of the cellar by a Jain Muni ("wise man") named Vairadeva. This inscription naturally
+        led to date the cave to the same period of the 4th century CE. <br>
+        According to Gupta, however, this inscription may be ambiguous and, for him, might only mean that the cave was
+        the subject of re-development work at that time. For this reason, he tends to date the cave on the basis of its
+        similarities with the caves of Barabar to the time of Ashoka (260 BCE), or even a little earlier, making it the
+        possible precursor of all artificial caves in India such as the Barabar Caves.
+    </div>
+    <div class="laung">
+        <a href="./jainmaindir.jpeg"><img src="jainmaindir.jpeg" alt="" title="Jain Mandir, Nalanda"></a>
+    </div>
+    <div class="aboutlaung">
+        <h3>Jain Maindir </h3>
+        The Digambar sect of Jains believes that the 24th and the last Tirthankar, Lord Mahavir, was born here <br>
+        Just 1.6 km from the ruins of Nalanda is this place called Kundalpur. The Digambar sect of Jains believes that
+        the 24th and the last Tirthankar, Lord Mahavir, was born here. There are many Jain temples in this village. <br>
+        As the place is situated in the vicinity of the ancient city of Rajgir, it is one of the popular destinations of
+        pilgrims as well as travelers. The present temple was however was recently built. The images of 72 Jinas are
+        displayed for offerings in a separate building.
+        The Temple has good accommodation facilities for devotees.
+    </div>
+    <a href="./1bihartrip1.html">
+        <button class="button1">1</button></a>
+    <a href="./1bihartrip2.html">
+        <button class="button2">2</button></a>
+    <a href="./1bihartrip3.html">
+        <button class="button3">3</button></a>
+    <a href="./1bihartrip4.html">
+        <button class="button4">4</button></a>
+    <a href="./1bihartrip5.html">
+        <button class="button5">5</button></a>
+    <a href="./1bihartrip6.html">
+        <button class="button6">Next Page</button>
+    </a>
+    <a href="./1bihartrip4.html">
+        <button class="button7">Prev Page</button>
+    </a>
+    <a href="./1bihartrip6.html">
+        <button class="button8">6</button></a>
+</body>
+
+</html>

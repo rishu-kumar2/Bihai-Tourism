@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODS</title>
+    <link rel="stylesheet" media="screen and (max-width: 1400px)" href="phone.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 720px;
+            background-image: url(laadoo1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .mid {
+            /* border: 3px solid red;  */
+            width: 600px;
+            margin: 15px 650px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20 px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .right img {
+            width: 120px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(laadoo1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .sweet {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 250px;
+            left: 250px;
+        }
+
+        .sweet img {
+            width: 350px;
+        }
+
+        .sweet div {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .maincourse {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 300px;
+            right: 250px;
+        }
+
+        .maincourse img {
+            width: 450px;
+        }
+
+        .maincourse div {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .button {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 700px;
+            left: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: gray;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 700px;
+            right: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+        }
+
+        @media only screen and (max-width: 850px) {
+            body {
+                height: 1000px;
+            }
+
+               .container{
+                flex-wrap: wrap;
+               }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 30px;
+            }
+
+            .sweet {
+                position: relative;
+                top: 150px;
+                left: 400px;
+                width: 40%;
+            }
+
+            .sweet img {
+                width: 100%;
+            }
+
+            .maincourse {
+                position: relative;
+                top: 500px;
+                left: 80px;
+                width: 50%;
+            }
+
+            .maincourse img {
+                width: 100%;
+            }
+
+            .button {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .button1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="heading">
+            FOOD AND CUISINE
+        </div>
+        <header>
+            <div class="left">
+                <img src="BIHAR LOGO.png" alt="">
+
+            </div>
+
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="./1bihartourisum.html">HOME</a></li>
+                    <li><a href="./1biharart.html">ART</a></li>
+                    <li><a href="./1biharfestival.html">FESTIVAL</a></li>
+                    <li><a href="" class="active">FOOD</a></li>
+                    <li><a href="./1bihartrip1.html">TRIP</a></li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <img src="apnabihar.jpg" alt="">
+            </div>
+
+        </header>
+        <div class="image">
+            <a href="./1sweet.html">
+                <div class="sweet">
+                    <img src="launglata.jpeg" alt="" title="SWEETS">
+                    <div>SWEETS</div>
+                </div>
+            </a>
+            <a href="./1maincourse.html">
+                <div class="maincourse">
+                    <img src="littichoka.jpeg" alt="" title="MAIN COURSE">
+                    <div>MAIN COURSE</div>
+                </div>
+            </a>
+        </div>
+        <!-- <a href="./1biharfestival.html">
+        <button class="button">Prev Page</button></a>
+    <a href="./1bihartrip1.html">
+        <button class="button1">Next Page</button></a> -->
+    </div>
+</body>
+
+</html>

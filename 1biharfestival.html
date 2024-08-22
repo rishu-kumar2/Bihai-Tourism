@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FESTIVAL</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 2570px;
+            background-image: url(chhathpuja1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .mid {
+            /* border: 3px solid red;  */
+            width: 600px;
+            margin: 15px 650px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20 px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .right img {
+            width: 120px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(chhathpuja1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .fairs {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 220px;
+            left: 55px;
+        }
+
+        .sonepur img {
+            position: absolute;
+            top: 410px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .aboutsonepur {
+            /* border: 4px solid red; */
+            width: 900px;
+            position: absolute;
+            top: 400px;
+            right: 120px;
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .aboutsonepur h3 {
+            text-align: center;
+        }
+
+        .festival {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 750px;
+            left: 55px;
+        }
+
+        .chhath img {
+            position: absolute;
+            top: 940px;
+            right: 30px;
+            /* border: 4px solid red; */
+            width: 430px;
+            border-radius: 10px;
+        }
+
+        .aboutchhath {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 910px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutchhath h3 {
+            text-align: center;
+        }
+
+        .rajgir img {
+            position: absolute;
+            top: 1410px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutrajgir {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1410px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutrajgir h3 {
+            text-align: center;
+        }
+
+        .pitra img {
+            position: absolute;
+            top: 1810px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutpitra {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1810px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutpitra h3 {
+            text-align: center;
+        }
+
+        .prakash img {
+            position: absolute;
+            top: 2160px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutprakash {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2160px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutprakash h3 {
+            text-align: center;
+        }
+
+        .button {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 2500px;
+            left: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: gray;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 2500px;
+            right: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        FESTIVALS AND FAIRS
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./1bihartourisum.html">HOME</a></li>
+                <li><a href="./1biharart.html">ART</a></li>
+                <li><a href="" class="active">FESTIVAL</a></li>
+                <li><a href="./1biharfood.html">FOOD</a></li>
+                <li><a href="./1bihartrip1.html">TRIP</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <img src="apnabihar.jpg" alt="">
+        </div>
+    </header>
+    <div class="fairs">
+        <h1>*FAIRS </h1>
+        <h3>These are the most popular experiences in Fairs </h3>
+    </div>
+    <div class="sonepur">
+        <a href="./sonepurmela.jpeg"> <img src="sonepurmela.jpeg" title="Sonpur-mela"> </a>
+    </div>
+    <div class="aboutsonepur">
+        <h3>Sonepur Mela</h3>
+        Sonepur Mela is one of Asia's largest cattle fairs, organized at the confluence of two mighty rivers, the Ganga
+        and Gandak. Popular since ancient eras for the trading of livestock, this month-long event takes place on the
+        auspicious occasion of Kartik Purnima in the month of November.Hindu devotees flock to the area for a holy dip
+        in River Ganga and Gandak and offer prayers at the Harihar Nath Temple. <br>
+        The event also offers a host of cultural programs presented by eminent artists with national and international
+        recognition. Thousands of people come from all over the world to attend the fair and leave with unforgettable
+        memories.
+    </div>
+    <div class="festival">
+        <h1>*FESTIVALS </h1>
+        <h3>These are the most popular experiences in Festivals </h3>
+    </div>
+    <div class="chhath">
+        <a href="./chhathpuja.jpeg"><img src="chhathpuja.jpeg" alt="" title="Chhath Puja"></a>
+    </div>
+    <div class="aboutchhath">
+        <h3>Chhath Puja
+        </h3>
+        Chhath is a major Hindu festival celebrated in Bihar and eastern Uttar Pradesh. <br>
+        Almost all civilizations have worshipped the 'God Sun', but it has a unique form in Bihar Chhath Puja is the
+        only occasion where the setting sun is worshipped along with the rising sun. <br>
+        According to the Hindu calendar, Chhath Puja is celebrated on the sixth day of Kartik month. Chhath Puja, also
+        known as Surya Shashti, is a bathing festival followed by a four-day period of abstinence and ritual purity.
+        <br>
+        Chhath Puja is a four-day long strict and spiritual observance. The first day of the Chhath Puja includes taking
+        a dip in the holy river/any water body. People also take the water of Ganges to their homes to perform special
+        offerings and rituals. Houses are thoroughly cleaned on this day. The second day of Chhath, also known as
+        Kharna, involves devotees observing a day long fast, which is broken in the late evening after performing the
+        worship of Mother Earth. The offerings to the God include rice pudding (kheer) and fruits, which is distributed
+        among family members and friends. The third day of Chhath goes in the preparation of the prasad (offerings) for
+        the evening offerings, also known as Sanjhiya Arghya. <br>
+        In the evening, large numbers of devotees gather on the banks of rivers and make offerings (Arghya) to the
+        setting sun. The folk songs are played displaying the culture and history of Bihar. The night of the third day
+        witnesses a colorful event known as Kosi. A canopy is made from sugarcane sticks and lighted earthen lamps are
+        placed inside the canopy along with baskets filled with prasad. On the fourth and final day of Chhath, family
+        members and friends go to the banks of rivers before sunrise and making offerings (Arghya) to the rising sun.
+        After this ritual, devotees break their fast and distribute Prasad to neighbors and relatives.
+    </div>
+    <div class="rajgir">
+        <a href="./rajgirmela.jpeg"> <img src="rajgirmela.jpeg" alt="" title="Rajgir-mahotsav"></a>
+    </div>
+    <div class="aboutrajgir">
+        <h3>Rajgir Mahotsav </h3>
+        Rajgir Mahotsav is a beautiful representation of history, religion, art, and culture and has a reputation not
+        only in Bihar but also at the national and international levels. The tradition of celebrating this festival has
+        been around since 1986 and is celebrated to highlight the historically and culturally rich heritage of Nalanda
+        and Rajgir. <br>
+        Celebrated at the Rajgir Convention Centre, this three-day extravaganza has witnessed the participation of
+        renowned singers and dancers who perform with the same enthusiasm as the audience. National artists like Hema
+        Malini Sanyukta Panigrahi, Ravindra Jain, Nida Fazli, Talat Aziz, Ghazal Samrat Ghulam Ali, Birju Maharaj,
+        Jaswinder Narula, Alka Yagnik, Pandit Shivkumar Sharma have enhanced the beauty of this festival with their
+        outstanding performances. <br>
+        Keeping the tradition and heritage intact, new dimensions are being added to the festival which has helped
+        establish Nalanda and Rajgir on the global tourism pedestal.
+    </div>
+    <div class="pitra">
+        <a href="pitrapaksha.jpeg"> <img src="pitrapaksha.jpeg" alt="" title="Pitra-paksha"> </a>
+    </div>
+    <div class="aboutpitra">
+        <h3>Pitra Paksha </h3>
+        History and culture have always occupied a very significant place in our lives and Pitra Paksha is common among
+        them. It is a Hindu tradition where 16 days is reserved for paying homage to the ancestors every year.
+        Pitra Paksha is dedicated to the departed souls and is meant for pleasing them, asking for forgiveness, and
+        ridding oneself of the Pitra Dosha (curse of ancestors). During this period rituals like Shraddh, Tarpan, and
+        Pind Daan are performed to please the departed soul from the cycle of birth, life, and death. Such rituals are
+        performed at the Falgu river and after that special prayer is offered at Vishnupad Temple, Gaya. <br>
+        It is believed that during Pitra Paksha consumption of non-vegetarian food is strictly prohibited. Ingredients
+        such as onions, garlic, chana, jeera, black salt, black mustard, cucumbers, brinjal, and lentils like masoor
+        dal, black urad dal must not be consumed at all.
+    </div>
+    <div class="prakash">
+        <a href="prakashparv.jpeg"><img src="prakashparv.jpeg" alt="" title="Prakash-parv"></a>
+    </div>
+    <div class="aboutprakash">
+        <h3>Prakash Parv </h3>
+        Prakash Parv is celebrated on the auspicious occasion of Guru Gobind Singh Ji Maharaj Jayanti. The day is
+        observed in honor and remembrance of the great warrior, poet, philosopher, and spiritual master. On this day,
+        Sikhs all over the world send greetings to one another and vow to follow the path and teachings of Guruji. <br>
+        Gurudwaras across India and the world are lit up with beautiful lights and decorations. In addition to this, a
+        'Langar' is organized in every gurudwara, and Sikhs perform community service as well. In some places, the
+        'Nagar Prabhat Pheri' is also organized wherein Sikhs join in with great fervor and enthusiasm. <br>
+        During Prakash Parv, Ardas is done, and prayers are offered in the Gurdwaras. Special bhajan-kirtan is also
+        performed on this occasion. <br>
+    </div>
+
+    <!-- <a href="./1biharart.html">
+        <button class="button">Prev Page</button></a>
+    <a href="./1biharfood.html">
+        <button class="button1">Next Page</button></a> -->
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 3130px;
+            background-image: url(ASHOK\ PILLAR1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .mid {
+            /* border: 3px solid red;  */
+            width: 600px;
+            margin: 15px 650px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20 px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .right img {
+            width: 120px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(ASHOK\ PILLAR1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .lado img {
+            position: absolute;
+            top: 380px;
+            right: 30px;
+            /* border: 4px solid red; */
+            width: 270px;
+            border-radius: 10px;
+        }
+
+        .aboutlado {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 380px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlado h3 {
+            text-align: center;
+        }
+
+        .malpua img {
+            position: absolute;
+            top: 730px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutmalpua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 730px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutmalpua h3 {
+            text-align: center;
+        }
+
+        .lai img {
+            position: absolute;
+            top: 1080px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 410px;
+            border-radius: 10px;
+        }
+
+        .aboutlai {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1080px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlai h3 {
+            text-align: center;
+        }
+
+        .perukia img {
+            position: absolute;
+            top: 1420px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutperukia {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1420px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutperukia h3 {
+            text-align: center;
+        }
+
+        .thrkua img {
+            position: absolute;
+            top: 1740px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .aboutthekua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1740px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutthekua h3 {
+            text-align: center;
+        }
+
+        .tilkut img {
+            position: absolute;
+            top: 2050px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .abouttilkut {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2050px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .abouttilkut h3 {
+            text-align: center;
+        }
+
+        .kasar img {
+            position: absolute;
+            top: 2400px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 430px;
+            border-radius: 10px;
+        }
+
+        .aboutkasar {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2350px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutkasar h3 {
+            text-align: center;
+        }
+
+        .laung img {
+            position: absolute;
+            top: 2800px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 340px;
+            border-radius: 10px;
+        }
+
+        .aboutlaung {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2800px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlaung h3 {
+            text-align: center;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 600px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .button1:hover {
+            color: gray;
+
+        }
+
+        .button2 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 640px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            color: gray;
+        }
+
+        .button3 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 680px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button3:hover {
+            color: gray;
+        }
+
+        .button4 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 720px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button4:hover {
+            color: gray;
+        }
+
+        .button5 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 760px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button5:hover {
+            color: gray;
+        }
+
+        .button6 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 840px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button6:hover {
+            color: gray;
+        }
+
+        .button7 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 40px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button7:hover {
+            color: gray;
+        }
+
+        .button8 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3080px;
+            left: 800px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button8:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        TRIPS AND TRAVELS
+        <h6>These are the most popular experiences in Trips</h6>
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./1bihartourisum.html">HOME</a></li>
+                <li><a href="./1biharart.html">ART</a></li>
+                <li><a href="./1biharfestival.html">FESTIVAL</a></li>
+                <li><a href="./1biharfood.html">FOOD</a></li>
+                <li><a href="./1bihartrip1.html" class="active">TRIP</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <img src="apnabihar.jpg" alt="">
+        </div>
+    </header>
+    <div class="lado">
+        <a href="./tigerreserve.jpeg"><img src="tigerreserve.jpeg" alt=""
+                title="valmiki-tiger-reserve, West-Champaran"></a>
+    </div>
+    <div class="aboutlado">
+        <h3>Valmiki Tiger Reserve </h3>
+        Valmiki Tiger Reserve forms the eastern most limit of the Himalayan Terai forests in India and is the only tiger
+        reserve of Bihar. Situated in the Gangetic Plains bio-geographic zone of the country, the forest has combination
+        of bhabar and terai tracts. Valmiki Tiger Reserve lies in the north-western (mostly in the West Champaran)
+        district of Bihar. Name of the district has been derived from two words Champa and Aranya meaning Forest of
+        Champa trees.
+
+        Sanctuary is reported to shelter of 250 species of birds 53 mammals, 145 birds, 26 reptile and 13 amphibians and
+        Tiger Reserve.
+    </div>
+    <div class="malpua">
+        <a href="./laurianandangarh.jpeg"> <img src="laurianandangarh.jpeg" alt=""
+                title="Lauria-nandangarh, West-Champaran"></a>
+    </div>
+    <div class="aboutmalpua">
+        <h3>Lauria-Nandangarh </h3>
+        Lauria Nandangarh is a small town in the West Champaran district, which has been a witness to many important
+        events of history. The main attraction of this city is the Ashoka Pillar found during excavation which shows the
+        glorious history of the Maurya period.
+        The height of the pillar built by Emperor Ashoka is 32 feet, for which sandstone has been used and there is a
+        circular abacus at the top of the pillar on which the lion statue stands. br
+        At a distance of 2 km from the Ashokan Pillar, there is a mound in its southwest direction called Nandangarh,
+        which is the remains of a huge stupa. Lauria Nandangarh is a major tourist destination and a must-visit place
+        here.
+    </div>
+    <div class="lai">
+        <a href="./kesariya.jpeg"> <img src="kesariya.jpeg" alt="" title="Kesariya-stupa,East Champaran"> </a>
+    </div>
+    <div class="aboutlai">
+        <h3>Kesariya Stupa </h3>
+        Kesariya came into the limelight after the discovery of biggest ever Buddhist Stupa. Till date it is estimated
+        to be the tallest ever-excavated Stupa in the world. <br>
+        It commands prominent positions in East Champaran from tourism point of view. The stupa is the symbol glorious
+        past of Buddhism era. It has a polygonal base and is capped with polygonal shaped bricks from top. 
+        It is surely a treat to watch for archaeological site lovers. 
+    </div>
+    <div class="perukia">
+        <a href="./karakatgarh.jpeg"><img src="karakatgarh.jpeg" alt="" title="Karakatgarh, Kaimur"></a>
+    </div>
+    <div class="aboutperukia">
+        <h3>Karakatgarh </h3>
+        The Karkatgarh Waterfall was a crocodile hunting place for Mughal rulers and British officials who also came to
+        enjoy the beautiful flora and fauna around the place. British officials constructed a dak bungalow with a view
+        on the 300 feet wide and 100 feet high waterfall. British officials Henry Ramsay mentioned it as the finest fall
+        surrounded by beautiful sceneries. The fall is now part of the Kaimur Wildlife Sanctuary situated in the Kaimur
+        mountain range; this waterfall spreads the dazzling shade of the beauty. It is located in the Chainpur block
+        which is adjacent to the border of Uttar Pradesh.
+    </div>
+    <div class="thrkua">
+        <a href="./telharkund.jpeg"><img src="telharkund.jpeg" alt="" title="Telhar-kund, Kaimur"></a>
+    </div>
+    <div class="aboutthekua">
+        <h3>Telhar-Kund</h3>
+        Telhar waterfall is a popular waterfall that’s found in the Kaimur district in Bihar. This waterfall is on the
+        Rohtas plateau which is in close proximity to the Durgavati River on Bhabua. <br>
+        The waterfall is around 32kms from the Bhabua area and around 47 km from the Mohania area. There are various
+        attractions near the fall including the Maa Mundeshwari Temple which is located 28 kms from it. This is one of
+        the oldest and most prominent temples in the area.
+        This waterfall also has a dam that’s called Karamchat Dam located near it It’s surrounded by amazing views on
+        all sides and is perfect for a picnic with your family or friends.
+    </div>
+    <div class="tilkut">
+        <a href="./mundeshwari.jpeg"><img src="mundeshwari.jpeg" alt="" title="Mundeshwari Temple, Kaimur"></a>
+    </div>
+    <div class="abouttilkut">
+        <h3>Mundeshwari Temple </h3>
+        The temple is considered as the ‘oldest Functional' temple of the world as rituals have been performed here
+        without a break. <br>
+        Maa Mundeshwari Devi Temple is dedicated to Lord Shiva and Shakti and is positioned in the Mundeshwari Hills.
+        The temple also has deities of Ganesha, Surya and Vishnu. The Archaeological Survey of India (ASI) dates the
+        temple to 108 AD and has been a protected monument since 1915. Mundeshwari Temple is the oldest specimen of the
+        Nagara style of temple architecture.Around the seventh century AD, Shaivism became the prevalent religion and
+        Viniteswara, which was a minor deity, emerged as the presiding deity of the temple. The Chatur Mukhalingam
+        (Lingam with four faces) representing him was accorded the central place in the temple, which it holds even now.
+    </div>
+    <div class="kasar">
+        <a href="./kaimurhill.jpeg"><img src="kaimurhill.jpeg" alt="" title="kaimur-hills, Kaimur"></a>
+    </div>
+    <div class="aboutkasar">
+        <h3>Kaimur Hills</h3>
+        These hills are significant from historical, ecological, folklore and social points of view, making it a place
+        worth visiting. <br>
+        With deep jungles interspersed with gorges and beautiful waterfalls, containing randomly dispersed antiquarian
+        remains, the Hills of Kaimur retain their unique air of mystery. Forming the easternmost part of the Vindhya
+        Range, beginning near Katangi in Jabalpur (Madhya Pradesh) and ending near Sasaram in Rohtas (Bihar), the Hills
+        have sheltered human activities since the most ancient times, and one still finds several imprints of the
+        activities of our early ancestors, with prehistoric rock shelters dating to even earlier than 10,000 B.C. More
+        than 500 pre-historic rock shelters have been found on the hills, and several of these have been found to
+        contain paintings preserving the artistic impressions of our early ancestors. The Hills contain several early
+        Hindu and Buddhist relics along with medieval ones. Several motifs like Baghauts which are memorials to persons
+        killed by tigers and memorials of earlier Babas (holy men) met with at various locations on the hills have
+        become a part of the popular culture. The importance of the Hills during the medieval history is revealed from
+        the available documents of the period and discovered inscriptions. However, the importance of most of these
+        historical sites is not fully understood even today, though it is well known and appreciated that the Hills have
+        housed some of the earliest settlements of pre-historic men. Having earlier described the Forts of Rohtasgarh
+        and Shergarh lying at strategic vantage points, along with the ancient temple of Mundeshwari, it would be in
+        place to briefly discuss the other mysterious and general antiquities randomly found to be often dispersed on
+        the Kaimur Hills.
+    </div>
+    <div class="laung">
+        <a href="./shershahsuri.jpeg"><img src="shershahsuri.jpeg" alt="" title="Sher-Shah-Suri-Tomb, Rohtas"></a>
+    </div>
+    <div class="aboutlaung">
+        <h3>Sher Shah Suri Tomb </h3>
+        The Tomb of Sher Shah Suri is situated at Sasaram in Rohtas district of Bihar. Sher Shah Suri’s tomb is a
+        majestic example of ancient architecture. It has elements of Indo-Islamic architecture which include large open
+        courtyards, high domes, and pillars; it has hints of Afghan architecture as well. This beautiful structure is a
+        three-storeyed high mausoleum (approximately one hundred and twenty-two feet). It stands in the middle of an
+        artificial square-shaped lake.
+    </div>
+    <a href="./1bihartrip1.html" class="active">
+        <button class="button1">1</button></a>
+    <a href="./1bihartrip2.html">
+        <button class="button2">2</button></a>
+    <a href="./1bihartrip3.html">
+        <button class="button3">3</button></a>
+    <a href="./1bihartrip4.html">
+        <button class="button4">4</button></a>
+    <a href="./1bihartrip5.html">
+        <button class="button5">5</button></a>
+    <a href="./1bihartrip2.html">
+        <button class="button6">Next Page</button>
+    </a>
+    <!-- <a href="./1biharfood.html">
+        <button class="button7">Prev Page</button>
+    </a> -->
+    <a href="./1bihartrip6.html">
+        <button class="button8">6</button></a>
+</body>
+
+</html>

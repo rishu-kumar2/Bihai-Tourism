@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP2</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 3130px;
+            background-image: url(tutla\ bhawani1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(tutla\ bhawani1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .lado img {
+            position: absolute;
+            top: 380px;
+            right: 60px;
+            /* border: 4px solid red; */
+            width: 340px;
+            border-radius: 10px;
+        }
+
+        .aboutlado {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 380px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlado h3 {
+            text-align: center;
+        }
+
+        .malpua img {
+            position: absolute;
+            top: 730px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutmalpua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 730px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutmalpua h3 {
+            text-align: center;
+        }
+
+        .lai img {
+            position: absolute;
+            top: 1080px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 410px;
+            border-radius: 10px;
+        }
+
+        .aboutlai {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1080px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlai h3 {
+            text-align: center;
+        }
+
+        .perukia img {
+            position: absolute;
+            top: 1420px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutperukia {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1420px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutperukia h3 {
+            text-align: center;
+        }
+
+        .thrkua img {
+            position: absolute;
+            top: 1740px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .aboutthekua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1740px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutthekua h3 {
+            text-align: center;
+        }
+
+        .tilkut img {
+            position: absolute;
+            top: 2050px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .abouttilkut {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2050px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .abouttilkut h3 {
+            text-align: center;
+        }
+
+        .kasar img {
+            position: absolute;
+            top: 2400px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .aboutkasar {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2400px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutkasar h3 {
+            text-align: center;
+        }
+
+        .laung img {
+            position: absolute;
+            top: 2700px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 340px;
+            border-radius: 10px;
+        }
+
+        .aboutlaung {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2700px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlaung h3 {
+            text-align: center;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 600px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+
+        }
+
+        .button2 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 640px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .button2:hover {
+            color: gray;
+        }
+
+        .button3 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 680px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button3:hover {
+            color: gray;
+        }
+
+        .button4 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 720px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button4:hover {
+            color: gray;
+        }
+
+        .button5 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 760px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button5:hover {
+            color: gray;
+        }
+
+        .button6 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 840px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button6:hover {
+            color: gray;
+        }
+
+        .button7 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 480px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button7:hover {
+            color: gray;
+        }
+
+        .button8 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 800px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button8:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        TRIPS AND TRAVELS
+        <h6>These are the most popular experiences in Trips</h6>
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+
+    </header>
+    <div class="lado">
+        <a href="shergarh.jpeg"><img src="shergarh.jpeg" alt="" title="Shergarh Fort, Rohtas"></a>
+    </div>
+    <div class="aboutlado">
+        <h3>Shergarh Fort </h3>
+        There are many such forts in the world, which have many secrets within themselves. The 'Fort of Shergarh' is one
+        such fort located in the Rohtas district of Bihar. Built between 1540 and 1545, this fort, located on the hills
+        of Kaimur, is unlike any other fort. Surrounded by forests on three sides, and the river Durgavati on one side,
+        the fort is strategically built in such a way that it is not visible to anyone from outside. There are hundreds
+        of tunnels and basements in this fort, and no one knows where they lead to. To get inside the fort, one must
+        first pass through a tunnel that will transport you back in time. When the tunnels are closed, the fort is no
+        longer visible to anyone. Sher Shah Suri is said to have built this fort to escape his enemies and lived here
+        with his family and soldiers. It is said that only Sher Shah Suri and his trusted soldiers knew the secret of
+        these tunnels. One of the tunnels also leads to the Rohtas Garh Fort. This marvelous fort depicts glorious
+        history. People fond of ancient architecture and history must explore this place
+    </div>
+    <div class="malpua">
+        <a href="./Manjhar Kund.jpeg"> <img src="Manjhar Kund.jpeg" alt="" title="Manjhar Kund, Rohtas"></a>
+    </div>
+    <div class="aboutmalpua">
+        <h3>Manjhar Kund </h3>
+        Manjhar Kund & Dhuan Kund Sasaram
+        Manjhar Kund and Dhuan Kund waterfalls situated on Kaimur hill, 10 km from the Sasaram. According to the ancient
+        history there was the tradition of carrying the Guru Granth Sahib. The people of the Sikh community used to stay
+        on the Manjhar Kund for three days. It is said that the water of the Kund is full of natural minerals and very
+        helpful in digesting food. <br>
+        It is the most beautiful spot and scenic place in Sawan. There is a tradition of fair on the first Sunday after
+        the Raksha Bandhan festival.
+    </div>
+    <div class="lai">
+        <a href="./tutla bhawani.jpeg"> <img src="tutla bhawani.jpeg" alt="" title="Tutla Bhawani Waterfall, Rohtas">
+        </a>
+    </div>
+    <div class="aboutlai">
+        <h3>Tutla Bhawani Waterfall</h3>
+        Tutula Bhawani (also Tutrahi or Titula Dham) is located nearby Tilauthu and approximately 20 Km south west from
+        Dehri-on-Sone. From north-west and south-east, these are two large mountains.The two large mountains one from
+        north west and another from south east at converge to create a green valley which stretches to 1 mile , there’s
+        a spring fall in the middle and from the middle of the valley a kachuar river flows. <br>
+        All this creates a fascinating scene, from east this valley stretches 300 M wick wharves, from west it shrinks
+        to only 50M from west a spring fall is created which falls from a height of 200 M.
+    </div>
+    <div class="perukia">
+        <a href="./kashishwater.jpeg"><img src="kashishwater.jpeg" alt="" title="Kashish Waterfall, Rohtas"></a>
+    </div>
+    <div class="aboutperukia">
+        <h3>Kashish Waterfall </h3>
+        170 km far from the capital city Patna, in Amjhore of Rohtas district of Bihar, a beautiful and mesmerizing
+        waterfall is located namely, Kashish Waterfall. It is about 5 hrs drive from Patna Junction <br>
+        According to Ain-i- Akbari (administration of Akbar), more than 200 waterfalls appear in Bihar in the rainy
+        season and Kashish is one among them. Court historian of Mughal Emperor Akbar, Abu’l Fazl wrote this book in the
+        Persian language.
+        The height of the waterfall is approximately 800 feet and as per the locals, one can witness 4 waterfalls
+        falling from the mountain in three directions. Aristotle said it right when he quoted “In all things of nature
+        there is something of the marvellous.” The beauty of the site is just beyond imagination and narrates the
+        nature’s tale of fairyland.
+    </div>
+    <div class="thrkua">
+        <a href="./punauradham.jpeg"><img src="punauradham.jpeg" alt="" title="Punaura Dham, Sitamarhi"></a>
+    </div>
+    <div class="aboutthekua">
+        <h3>Punaura Dham</h3>
+        Maa Janaki Janmabhoomi Temple is also known as Punaura Dham in Punaura village of Sitamarhi district of Bihar.
+        It is believed that Mata Sita was born at this place. There is a story related to this that once there was a
+        severe famine in Mithila and the priest there advised King Janak to plow the field. When King Janak was
+        ploughing, an earthen pot came out of the ground, in which Mother Sita was in an infant state.
+        Behind the temple in Punaura Dham, there is a lake by the name of Janaki Kund. There is a belief about this lake
+        that bathing in this lake gives birth to children.
+    </div>
+    <div class="tilkut">
+        <a href="./ASHOK PILLAR.jpeg"><img src="ASHOK PILLAR.jpeg" alt="" title="Ashokan Pillar, vaishali"></a>
+    </div>
+    <div class="abouttilkut">
+        <h3>Ashokan Pillar </h3>
+        Kolhua is a famous Buddhist excavation site situated approximately 65 km North-West of Patna. The excavations
+        have revealed the famous Ashokan Pillar having a statue of lion on the top. Excavations also revealed, many
+        other articles related to Buddhism. <br>
+        Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red sandstone,
+        surmounted by a bell shaped capital, 18.3 m high. A life-size figure of a lion is placed on top of the pillar.
+        There is a small tank here known as Ramkund. This pillar beside a brick stupa at Kolhua commemorates Buddha's
+        last sermon.
+    </div>
+    <div class="kasar">
+        <a href="./buddharelic.jpeg"><img src="buddharelic.jpeg" alt="" title="Buddha Relic Stupa, Vaishali"></a>
+    </div>
+    <div class="aboutkasar">
+        <h3>Buddha Relic Stupa</h3>
+        One of the most popular sites for Buddhists, this site enshrines the holy ashes of Lord Buddha. <br>
+        Buddha Relic Stupa, enshrining one of the eight parts of the mortal remains of Lord Buddha after he attained
+        Mahaparinirvana, is one of the most revered sites for Buddhists and a protected one for Archaeological Survey of
+        India (ASI), located around 55km northwest of Patna in Vaishali district.
+        The Buddha Relic Stupa was built by Lichhavis as a mud-stupa in the 5th century BC. The stupa was later
+        discovered in an archaeological excavation carried out under the aegis of Patna-based K.P. Jayaswal Research
+        Institute during 1958-1962. The relic casket excavated from the core of the stupa contained the holy ashes of
+        Lord Buddha mixed with earth, a piece of conch, pieces of beads, a thin golden leaf and a copper punch-marked
+        coin. The casket was brought to Patna Museum in 1972.
+    </div>
+    <div class="laung">
+        <a href="./vishwashantistupa.jpeg"><img src="vishwashantistupa.jpeg" alt=""
+                title="Vishwa Shanti Stupa, Vaishali"></a>
+    </div>
+    <div class="aboutlaung">
+        <h3>Vishwa Shanti Stupa </h3>
+        This stupa is a symbol of peace and love and enshrines the relics of Buddha in its foundation and top. <br>
+        Vaishali is the place where Buddha preached his last sermon before his Nirvana. The Vishwa Shanti Stupa is
+        erected according to the teaching of the Saodharma Pundarika Sutra (The lotus Sutra) to disseminate love and
+        peace and to create "The pure Land" on the earth. <br>
+        The construction of the stupa all over the world was initiated by the most Ven. Nichidatsu Fuji Guruji, after
+        seeing the tragedy of atomic bombs in Hiroshima and Nagasaki of Japan, at the end of the World war 2. The Vishwa
+        Shanti Stupa, Vaishali has been built by Nipponzan Myhoji and Rajgir Buddha Vihar Society. Through contribution
+        of devotees in India and Japan, The Lord Buddha's relics have been enshrined on the foundation and on the top of
+        the stupa.
+    </div>
+    <a href="./1bihartrip1.html" class="active">
+        <button class="button1">1</button></a>
+    <a href="./1bihartrip2.html">
+        <button class="button2">2</button></a>
+    <a href="./1bihartrip3.html">
+        <button class="button3">3</button></a>
+    <a href="./1bihartrip4.html">
+        <button class="button4">4</button></a>
+    <a href="./1bihartrip5.html">
+        <button class="button5">5</button></a>
+    <a href="./1bihartrip3.html">
+        <button class="button6">Next Page</button>
+    </a>
+    <a href="./1bihartrip1.html">
+        <button class="button7">Prev Page</button>
+    </a>
+    <a href="./1bihartrip6.html">
+        <button class="button8">6</button></a>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP4</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 3130px;
+            background-image: url(80feet1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .heading {
+            /* border: 3px solid red; */
+            background: url(80feet1.jpeg);
+            border-radius: 50px;
+            display: inline-block;
+            margin: 35px 120px;
+            padding: 11px 15px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size: 55px;
+        }
+
+        .lado img {
+            position: absolute;
+            top: 380px;
+            right: 130px;
+            /* border: 4px solid red; */
+            width: 240px;
+            border-radius: 10px;
+        }
+
+        .aboutlado {
+            /* border: 4px solid red; */
+            width: 940px;
+            position: absolute;
+            top: 380px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlado h3 {
+            text-align: center;
+        }
+
+        .malpua img {
+            position: absolute;
+            top: 730px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 345px;
+            border-radius: 10px;
+        }
+
+        .aboutmalpua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 730px;
+            right: 55px;
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .aboutmalpua h3 {
+            text-align: center;
+        }
+
+        .lai img {
+            position: absolute;
+            top: 1080px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 370px;
+            border-radius: 10px;
+        }
+
+        .aboutlai {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1070px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlai h3 {
+            text-align: center;
+        }
+
+        .perukia img {
+            position: absolute;
+            top: 1390px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 355px;
+            border-radius: 10px;
+        }
+
+        .aboutperukia {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1390px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutperukia {
+            text-align: center;
+        }
+
+        .thrkua img {
+            position: absolute;
+            top: 1740px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .aboutthekua {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 1740px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutthekua h3 {
+            text-align: center;
+        }
+
+        .tilkut img {
+            position: absolute;
+            top: 2050px;
+            left: 90px;
+            /* border: 4px solid red; */
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .abouttilkut {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2050px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .abouttilkut h3 {
+            text-align: center;
+        }
+
+        .kasar img {
+            position: absolute;
+            top: 2350px;
+            right: 90px;
+            /* border: 4px solid red; */
+            width: 370px;
+            border-radius: 10px;
+        }
+
+        .aboutkasar {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2350px;
+            left: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutkasar h3 {
+            text-align: center;
+        }
+
+        .laung img {
+            position: absolute;
+            top: 2700px;
+            left: 100px;
+            /* border: 4px solid red; */
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        .aboutlaung {
+            /* border: 4px solid red; */
+            width: 920px;
+            position: absolute;
+            top: 2700px;
+            right: 55px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        .aboutlaung h3 {
+            text-align: center;
+        }
+
+        .button1 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 600px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            color: gray;
+
+        }
+
+        .button2 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 640px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            color: gray;
+        }
+
+        .button3 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 680px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button3:hover {
+            color: gray;
+        }
+
+        .button4 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 720px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .button4:hover {
+            color: gray;
+        }
+
+        .button5 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 760px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button5:hover {
+            color: gray;
+        }
+
+        .button6 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 840px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button6:hover {
+            color: gray;
+        }
+
+        .button7 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 480px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button7:hover {
+            color: gray;
+        }
+
+        .button8 {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 3050px;
+            left: 800px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .button8:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        TRIPS AND TRAVELS
+        <h6>These are the most popular experiences in Trips</h6>
+    </div>
+    <header>
+        <div class="left">
+            <img src="BIHAR LOGO.png" alt="">
+
+        </div>
+
+    </header>
+    <div class="lado">
+        <a href="./vishnupadtemple.jpeg"><img src="vishnupadtemple.jpeg" alt="" title="Vishnupad-temple, Gaya"></a>
+    </div>
+    <div class="aboutlado">
+        <h3>Vishnupadm Temple </h3>
+        The temple was erected during 1787 by Queen Ahilyabai. A beautiful sacred place on the banks of Phalgu river
+        surrounded by rugged rocks on three sides and water on the fourth side. The second largest city of Bihar is that
+        ancient city which has been talked about in Ramayana (where Lord Rama went to Gaya to do pind-daan of his father
+        Dashrath) and Mahabharata. It has also witnessed the enlightenment of Gautama Buddha. Following this, Gaya is a
+        home to the legendary Vishnupad Temple which is dedicated to Lord Vishnu.
+    </div>
+    <div class="malpua">
+        <a href="./sujatastupa.jpeg"> <img src="sujatastupa.jpeg" alt="" title="Sujata Stupa, Gaya"></a>
+    </div>
+    <div class="aboutmalpua">
+        <h3>Sujata Stupa</h3>
+        Sujata Stupa is dedicated to the milkmaid Sujata who helped Buddha break his seven years’ fast. <br>
+        Sujata Stupa, also Sujata Kuti stupa or Sujata Garh, is a Buddhist stupa located in the village of Senanigrama
+        (Bakraur) slightly east of Bodh Gaya in the state of Bihar, India. It lies directly across the Phalgu River from
+        the town of Bodh Gaya, where Gautama Buddha is said to have attained enlightenment. It is a walk of about 20
+        minutes, from Bodh Gaya to Sujata Stupa. It was initially built in the 2nd century BCE as confirmed by finds of
+        Dark Grey polished wares and a punch- marked coin in the monastery nearby.
+        The stupa was dedicated to the milkmaid Sujata, from the village of Bakraur, who is said to have fed Gautama
+        Buddha milk and rice at this spot as he was sitting under a Banyan tree, thereby ending his seven years of
+        fasting and ascetism, and allowing him to attain enlightenment.
+    </div>
+    <div class="lai">
+        <a href="./gurpahill.jpeg"> <img src="gurpahill.jpeg" alt="" title="Gurpa Hill, Gaya"> </a>
+    </div>
+    <div class="aboutlai">
+        <h3>Gurpa Hill</h3>
+        Gurpa Hills / Gurupada Giri is one of the natural and historical places located in the Gaya district of Bihar.
+        It is situated on the Bihar-Jharkhand border at a distance of 50 km. <br>
+        Here Mahakasyapa, the last disciple of Buddha, attained Nirvana. Gurupada Giri is now known as 'Gurpa Hill'.
+        Another name for this hill is 'Kukkutpada Giri'. Natural scenery, forests, waterfalls, sunrise and sunset views,
+        all have put Gurpa hill in great vogue. <br>
+        There is a temple named Gurupada on Gurpa hill which is assumed to have footprints of “Lord Vishnu”. This place
+        has gained popularity among the pilgrims of Buddhism and Hinduism. From the top of the Gurpa peak, one can get a
+        breathtaking view of the surrounding countryside. It is an ideal place for meditation. Tourists throughout the
+        year is visiting this place.
+    </div>
+    <div class="perukia">
+        <a href="./manglagauri.jpeg"><img src="manglagauri.jpeg" alt="" title="Mangala Gauri temple, Gaya"></a>
+    </div>
+    <div class="aboutperukia">
+        <h3>Mangala Gauri temple </h3>
+        Mangla Gauri Temple, built in the 15th century, is counted among the 52 Mahashaktipeeths dedicated to Goddess
+        Sati where the body parts of Goddess Sati fell. The mother sitting on the hill is considered to be the goddess
+        of benevolence. A special puja is organized here every Tuesday in the rainy season. On this day women observe a
+        fast so that their families prosper, and their husbands get success and fame. In this puja, 16 types of bangles,
+        seven types of fruits, and five types of sweets are offered to Goddess Mangala Gauri and this custom has been
+        going on since the beginning.
+    </div>
+    <div class="thrkua">
+        <a href="./80feet.jpeg"><img src="80feet.jpeg" alt="" title="80 Feet Buddha, Gaya"></a>
+    </div>
+    <div class="aboutthekua">
+        <h3>80 Feet Buddha</h3>
+        The 80ft Buddha statue is one of the many stops in the Buddhist pilgrimage and tourist routes in Bodh Gaya,
+        Bihar (India). The great statue is a mix of sandstone blocks and red granite. It is possibly the largest built
+        in India and was consecrated on 18 November 1989 by the 14th Dalai Lama. The foundation stone for the statue was
+        placed in 1982.
+    </div>
+    <div class="tilkut">
+        <a href="./barabarcaves.jpeg"><img src="barabarcaves.jpeg" alt="" title="Barabar Caves, Jehanabad"></a>
+    </div>
+    <div class="abouttilkut">
+        <h3>Barabar Caves </h3>
+        Barabar hills is an unarguably the most sought-after tourist destination of Jehanabad district. It’s a home to
+        the world’s oldest surviving caves. Being a rare historical site today this has become an international tourist
+        destination and attracts fair number of foreign tourists every year. It is located near Makhdumpur village of
+        Jehanabad district. <br>
+        For thousands of years these caves definitely remained as religious centers for innumerable Jain monks, but
+        there are historical records to prove that even Gautama Buddha had meditated in these caves. It has the special
+        echo effect feature; which means that any sound made here lasts for 3 minutes.
+    </div>
+    <div class="kasar">
+        <a href="./nagarjunahills.jpeg"><img src="nagarjunahills.jpeg" alt="" title="Nagarjuna Hills, Jehanabad"></a>
+    </div>
+    <div class="aboutkasar">
+        <h3>Nagarjuna Hills</h3>
+        A collection of three caves with historical inscriptions make these hills an important place for tourists with.
+        <br>
+        Nagarjuna Hills are located 35km north of Gaya, less than two km from Barabar Hills in Jehanabad district in
+        Bihar. Often Nagarjuni Caves are joined with the nearby Barabar Caves in one group of monuments.
+        There are three caves excavated in the Nagarjuna Hills - the Vadathi-ka-Kubha, the Vapiya-ka-Kubha, and the
+        Gopi-ka-Kubha. It is an important archaeological site. <br>
+        Gopi (Gopi-ka-Kubha, milkmaid) is a cave reached by stepping up a flight of megalithic steps. It has got the
+        largest chamber in the group. The cave contains several important inscriptions, some of these testify that son
+        of Ashoka Dasaratha (reigned in 232 – 224 BC) – has devoted these caves to Ajivika – thus these structures might
+        be some 50 years younger than caves at Barabar. The cave is 12.3 m long and 5.8 m wide, both ends of the chamber
+        are semi-circular. The roof is vaulted, up to 3.2 m high. This cave has polished walls and floor – the famous
+        “Mauryan polish”.
+    </div>
+    <div class="laung">
+        <a href="./gridhakuthill.jpeg"><img src="gridhakuthill.jpeg" alt="" title="Gridhakut Hill, Nalanda"></a>
+    </div>
+    <div class="aboutlaung">
+        <h3>Grudhakut Hill </h3>
+        This is one of the most ancient sites where the Buddha is said to have preached his Lotus Sermon. <br>
+        Quite true to the meaning of its name as Vulture Peak indeed the peak appears as a shape of vulture head with a
+        natural stone formation. The place is also referred as “Gujjhakut” in Buddhist text. <br>
+        One of the most ancient sites where the Buddha is said to have preached his Lotus Sermon was amongst the
+        favorite meditating place of the Buddha. Even today one can feel the deep sense of spiritual power at the peak
+        that is devoid of any man-made grandeur. <br>
+        A statue of the Buddha (600 BCE) was found here and currently housed at Archeological Museum of Nalanda.
+    </div>
+    <a href="./1bihartrip1.html">
+        <button class="button1">1</button></a>
+    <a href="./1bihartrip2.html">
+        <button class="button2">2</button></a>
+    <a href="./1bihartrip3.html">
+        <button class="button3">3</button></a>
+    <a href="./1bihartrip4.html">
+        <button class="button4">4</button></a>
+    <a href="./1bihartrip5.html">
+        <button class="button5">5</button></a>
+    <a href="./1bihartrip5.html">
+        <button class="button6">Next Page</button>
+    </a>
+    <a href="./1bihartrip3.html">
+        <button class="button7">Prev Page</button>
+    </a>
+    <a href="./1bihartrip6.html">
+        <button class="button8">6</button></a>
+</body>
+
+</html>
